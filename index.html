@@ -3,40 +3,34 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>10章【ハンバーガーメニューを作ってみよう】</title>
+	<title>11章【タブメニューを作ってみよう】</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/style.css" media="all">
 </head>
 <body>
-	<h1>10章【ハンバーガーメニューを作ってみよう】</h1>
-	<div id="sp-menu">
-		<h2>MENU</h2>
-		<ul>
-			<li><a href="#">MENU1</a></li>
-			<li><a href="#">MENU2</a></li>
-			<li><a href="#">MENU3</a></li>
-			<li><a href="#">MENU4</a></li>
-			<li><a href="#">MENU5</a></li>
+	<h1>11章【タブメニューを作ってみよう】</h1>
+	<div id="wrap">
+		<ul id="tab-menu" class="clearfix">
+			<li><a href="#tab1" class="active">MENU1</a></li>
+			<li><a href="#tab2" class="">MENU2</a></li>
+			<li><a href="#tab3" class="">MENU3</a></li>
+			<li><a href="#tab4" class="">MENU4</a></li>
 		</ul>
+		<div id="tab-contents" class="clearfix">
+			<div id="tab1" class="tab">
+				<p>TAB1text</p>
+			</div>
+			<div id="tab2" class="tab">
+				<p>TAB2textTAB2text</p>
+			</div>
+			<div id="tab3" class="tab">
+				<p>TAB3textTAB3textTAB3text</p>
+			</div>
+			<div id="tab4" class="tab">
+				<p>TAB4textTAB4textTAB4textTAB4text</p>
+			</div>
+		</div>
 	</div>
-
-	<div id="hm-icon">
-		<a class="menu-trigger" href="#">
-			<span></span>
-			<span></span>
-			<span></span>
-		</a>
-	</div>
-
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-	<div class="box"></div>
-
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 
